@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Sportingfy",
+  "version": "1.0",
+
+  "description": "Adds a Sporting Clube Portugal border to all webpages matching sport websites",
+
+  "icons": { "48": "icons/border-48.png" },
+
+  "content_scripts": [
+    { "matches": ["*://*.zerozero.pt/*"], "js": ["sportingfy.js"] }
+  ]
+}
